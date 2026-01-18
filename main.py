@@ -30,6 +30,9 @@ users_collection = db.users
 institutions_collection = db.institutions
 notes_collection = db.notes
 # # 
+@app.route("/health")
+def health():
+    return "OK", 200
 
 
 def log_error(e):
